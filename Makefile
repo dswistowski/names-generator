@@ -7,6 +7,9 @@ out/site.css: ui/index.html src/site.css
 dev:
 	npx tailwindcss -i ./src/site.css -o ./ui/site.css -w
 
+dev-server:
+	uvicorn names_generator.app:app --reload
+
 lint:
 	flake8 && black . --check
 typecheck:
