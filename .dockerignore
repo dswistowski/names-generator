@@ -1,3 +1,4 @@
+.mypy_cache
 .idea
 Dockerfile
 src/
@@ -7,3 +8,4 @@ README.rst
 *.pyd
 __pycache__
 .pytest_cache
+setup.cfg
