@@ -14,8 +14,8 @@ api_app = FastAPI(titl="The Names Generator API")
 app.mount("/api", api_app)
 app.mount("/", StaticFiles(directory="ui", html=True), name="ui")
 
-MODEL_PATH = os.environ.get("MODEL_PATH", "./models/names.pt")
-NAMES_PATH = os.environ.get("NAMES_PATH", "./models/names.txt")
+MODEL_PATH = os.environ.get("MODEL_PATH", "./models/pokemons.pt")
+NAMES_PATH = os.environ.get("NAMES_PATH", "./models/pokemons.txt")
 
 MODEL = load(MODEL_PATH)
 FORBIDDEN_NAMES = load_names(NAMES_PATH)
