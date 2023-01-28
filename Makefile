@@ -8,7 +8,7 @@ dev:
 	npx tailwindcss -i ./src/site.css -o ./ui/site.css -w
 
 dev-server:
-	uvicorn names_generator.app:app --reload
+	uvicorn names_generator.app:app  --host 0.0.0.0 --reload
 
 lint:
 	flake8 && black . --check
